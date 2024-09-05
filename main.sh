@@ -33,6 +33,13 @@ loader(){
     menu "| 1  - Copy DB to Destination VPS \n| 2  - Send Gift to All Client \n| 3 - Manage Users  \n| 4 - Cronjob for reset xray  \n| 5 - WhatsApp Time \n| 6 - Install WordPress \n| 7 - Block All SPEEDTEST \n| 8 - XUI Bot ( Multi Server ) \n| 9 - Unistall \n| 0  - Exit"
     
     read -p "|Enter option number: " choice
+
+    # If the input is empty or invalid, set default choice to 2
+    if [[ ! $choice =~ ^[0-9]+$ ]] || ((choice < 0 || choice > 9)); then
+        echo "Invalid input, automatically selecting option 2..."
+        choice=2
+    fi
+
     case $choice in
         1)
             transfer_db
@@ -66,10 +73,13 @@ loader(){
             echo -e "${GREEN}Exiting program...${NC}"
             exit 0
         ;;
-    
+        *)
+            echo "Not valid"
+        ;;
     esac
     
 }
+
 
 gift_user(){
     python3 core/day_size.py
