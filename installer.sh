@@ -5,7 +5,7 @@ rm -rf /root/xui-assistant/
 sudo apt install git -y
 
 # clone from repo in xui-assistant directory
-git clone https://github.com/dev-ir/xui-assistant.git /root/xui-assistant/
+git clone https://github.com/mr-uranium/xui-assistant.git /root/xui-assistant/
 
 # Access Folder
 sudo chmod +x /root/xui-assistant/
