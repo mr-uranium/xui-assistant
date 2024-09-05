@@ -154,7 +154,7 @@ transfer_db(){
 
 user_gift(){
     
-    wget https://raw.githubusercontent.com/dev-ir/xui-assistant/master/core/day_size.py
+    wget https://raw.githubusercontent.com/mr-uranium/xui-assistant/master/core/day_size.py
     python3 day_size.py
     rm day_size.py
 }
@@ -178,7 +178,7 @@ block_speedtest_sites(){
 
 xray_restart(){
     
-    wget https://raw.githubusercontent.com/dev-ir/xui-assistant/master/core/setup_cron.py
+    wget https://raw.githubusercontent.com/mr-uranium/xui-assistant/master/core/setup_cron.py
     python3 setup_cron.py
     rm setup_cron.py
     
@@ -186,7 +186,7 @@ xray_restart(){
 
 xui_bot(){
 
-    wget https://raw.githubusercontent.com/dev-ir/xui-assistant/master/core/v2ray_bot.py
+    wget https://raw.githubusercontent.com/mr-uranium/xui-assistant/master/core/v2ray_bot.py
     python3 v2ray_bot.py
     rm v2ray_bot.py
 }
