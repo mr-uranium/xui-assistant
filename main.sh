@@ -66,9 +66,7 @@ loader(){
             echo -e "${GREEN}Exiting program...${NC}"
             exit 0
         ;;
-        *)
-            echo "Not valid"
-        ;;
+    
     esac
     
 }
